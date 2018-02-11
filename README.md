@@ -6,9 +6,9 @@
 
 2. Extract zip + cd into new directory folder
 
-3. Launch a local client server (Python) from terminal. To do this enter: 
+3. From directory folder, launch a local client server (Python) from terminal. To do this: 
 
-4. python -m SimpleHTTPServer 8000 
+4. Enter ```python -m SimpleHTTPServer 8000``` into the command line
 
 5. Visit the site in your browser at http://localhost:8000
 
