@@ -396,6 +396,9 @@ nav h1 a {
 	#restaurants-list {
 		padding-top: 10px;
 		padding-bottom: 10px;
+		display: flex;
+    flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.filter-options {
@@ -516,6 +519,12 @@ nav h1 a {
 	#restaurants-list {
 		padding-top: 10px;
 		padding-bottom: 10px;
+		display: flex;
+    flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-left: 100px;
+		margin-right: 100px;
 	}
 
 	.filter-options {
@@ -540,8 +549,10 @@ nav h1 a {
 	#restaurants-list li {
 		margin: auto;
 		text-align: center;
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 30px;
+		margin-bottom: 10px;
 	}
 	.header-text {
 		padding-top: 2%;
