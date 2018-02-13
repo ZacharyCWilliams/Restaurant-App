@@ -16,7 +16,7 @@
     </nav>
   </header>
 
-  <main id="maincontent">
+  <main id="maincontent" role="main">
     <section id="map-container">
       <div id="map" role="presentation" aria-hidden="true"></div>
     </section>
@@ -40,7 +40,15 @@
   <footer id="footer">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
-
+  <script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("/sw.js").then(function(registration) {
+      console.log("yay!");
+    }) .catch(function(error) {
+      console.log("boo", error)
+    })
+  }
+  </script>
 </body>
 
 </html>
