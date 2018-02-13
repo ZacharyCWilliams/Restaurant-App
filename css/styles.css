@@ -279,6 +279,9 @@ nav h1 a {
 
 /* MEDIA QUERYS */
 @media screen and (min-width: 0px) and (max-width: 450px) {
+	.container-test {
+		max-width: 60%;
+	}
 	#maincontent {
 		width: 100%;
 	}
@@ -289,7 +292,9 @@ nav h1 a {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-
+	#footer {
+		max-width: 100%;
+	}
 	.filter-options {
 		height: 175px;
 	}
@@ -387,6 +392,9 @@ nav h1 a {
 }
 
 @media screen and (min-width: 451px) and (max-width: 800px) {
+	.container-test {
+		max-width: 60%;
+	}
 	#maincontent {
 		width: 100%;
 	}
@@ -425,12 +433,17 @@ nav h1 a {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+	#footer {
+		max-width: 100%;
+	}
 	.header-text {
 		padding-top: 3.75%;
 	}
 
 	/* RESTAURANT PAGE */
-
+	.inside .restaurant-container-test {
+		max-width: 60%
+	}
 	.inside .restaurant-header-text {
 		font-size: 40px;
 	}
@@ -526,7 +539,9 @@ nav h1 a {
 		margin-left: 100px;
 		margin-right: 100px;
 	}
-
+	#footer {
+		max-width: 100%;
+	}
 	.filter-options {
 		height: 175px;
 	}
