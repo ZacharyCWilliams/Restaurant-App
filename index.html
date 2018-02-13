@@ -10,36 +10,38 @@
 </head>
 
 <body class="body">
-  <header>
-    <nav>
-      <h1 class="header-text"><a href="/">Restaurant Reviews</a></h1>
-    </nav>
-  </header>
+  <container class="container-test">
+    <header>
+      <nav>
+        <h1 class="header-text"><a href="/">Restaurant Reviews</a></h1>
+      </nav>
+    </header>
 
-  <main id="maincontent" role="main">
-    <section id="map-container">
-      <div id="map" role="presentation" aria-hidden="true"></div>
-    </section>
-    <section>
-      <div class="filter-options">
-        <h2 class="filter-headline">Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-          <option value="all">All Neighborhoods</option>
-        </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
-        </select>
-      </div>
-      <ul id="restaurants-list"></ul>
-    </section>
-  </main>
-  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
-  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh6_ab-jVmlKJBHLSMhrH-d9cdMD8IV8Q&callback=initMap"></script>
+    <main id="maincontent" role="main">
+      <section id="map-container">
+        <div id="map" role="application" aria-hidden="true"></div>
+      </section>
+      <section>
+        <div class="filter-options">
+          <h2 class="filter-headline">Filter Results</h2>
+          <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+            <option value="all">All Neighborhoods</option>
+          </select>
+          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+            <option value="all">All Cuisines</option>
+          </select>
+        </div>
+        <ul id="restaurants-list"></ul>
+      </section>
+    </main>
+    <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+    <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh6_ab-jVmlKJBHLSMhrH-d9cdMD8IV8Q&callback=initMap"></script>
 
-  <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
-  </footer>
+    <footer id="footer">
+      Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
+</container>
   <script>
   if('serviceWorker' in navigator) {
     navigator.serviceWorker.register("/sw.js").then(function(registration) {
