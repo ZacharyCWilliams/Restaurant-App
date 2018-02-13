@@ -7,14 +7,16 @@
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Restaurant Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
 </head>
 
 <body class="inside">
   <!-- Beginning header -->
   <header class="header-div">
     <!-- Beginning nav -->
-    <nav class="black-header">
-      <h1 class="header-div"><a class="restaurant-header-text" href="/">Restaurant Reviews</a></h1>
+    <nav class="black-header" role="navigation">
+      <h2 class="header-div"><a class="restaurant-header-text" href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" >
@@ -26,7 +28,7 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" role="main">
     <!-- Beginning map -->
     <section id="map-container">
       <div id="map" role="presentation" aria-hidden="true"></div>
@@ -34,7 +36,7 @@
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h2 id="restaurant-name"></h1>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
@@ -63,7 +65,15 @@
   <!-- Google Maps -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script>
   <!-- End scripts -->
-
+  <script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("/sw.js").then(function(registration) {
+      console.log("yay!");
+    }) .catch(function(error) {
+      console.log("boo", error)
+    })
+  }
+  </script>
 </body>
 
 </html>
