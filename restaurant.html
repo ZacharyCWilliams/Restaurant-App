@@ -12,51 +12,53 @@
 </head>
 
 <body class="inside">
-  <!-- Beginning header -->
-  <header class="header-div">
-    <!-- Beginning nav -->
-    <nav class="black-header" role="navigation">
-      <h2 class="header-div"><a class="restaurant-header-text" href="/">Restaurant Reviews</a></h1>
-    </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
-    <!-- End nav -->
-  </header>
-  <!-- End header -->
+    <!-- Beginning header -->
+    <header class="header-div">
+      <!-- Beginning nav -->
+      <nav class="black-header" role="navigation">
+        <h2 class="header-div"><a class="restaurant-header-text" href="/">Restaurant Reviews</a></h1>
+      </nav>
+      <!-- Beginning breadcrumb -->
+      <ul id="breadcrumb" aria-label="breadcrumb">
+        <li><a href="/">Home</a></li>
+      </ul>
+      <!-- End breadcrumb -->
+      <!-- End nav -->
+    </header>
+    <!-- End header -->
+  <container class="restaurant-container-test">
+    <!-- Beginning main -->
+    <main id="maincontent" role="main">
+      <!-- Beginning map -->
+      <section class="map-test">
+        <section id="map-container">
+          <div id="map" role="application" aria-hidden="true"></div>
+        </section>
+      </section>
+      <!-- End map -->
+      <!-- Beginning restaurant -->
+      <section id="restaurant-container">
+        <h2 id="restaurant-name" tabindex="0"></h2>
+        <img id="restaurant-img">
+        <p id="restaurant-cuisine"></p>
+        <p id="restaurant-address" tabindex="0"></p>
+        <table id="restaurant-hours" tabindex="0"></table>
+      </section>
+      <!-- end restaurant -->
+      <!-- Beginning reviews -->
+      <section id="reviews-container">
+        <ul id="reviews-list" tabindex="0"></ul>
+      </section>
+      <!-- End reviews -->
+    </main>
+    <!-- End main -->
 
-  <!-- Beginning main -->
-  <main id="maincontent" role="main">
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map" role="presentation" aria-hidden="true"></div>
-    </section>
-    <!-- End map -->
-    <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h2 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
-    </section>
-    <!-- end restaurant -->
-    <!-- Beginning reviews -->
-    <section id="reviews-container">
-      <ul id="reviews-list"></ul>
-    </section>
-    <!-- End reviews -->
-  </main>
-  <!-- End main -->
-
-  <!-- Beginning footer -->
-  <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
-  </footer>
-  <!-- End footer -->
-
+    <!-- Beginning footer -->
+    <footer id="footer">
+      Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
+    <!-- End footer -->
+</container>
   <!-- Beginning scripts -->
   <!-- Database helpers -->
   <script type="text/javascript" src="js/dbhelper.js"></script>
