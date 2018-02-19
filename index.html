@@ -43,12 +43,14 @@
     </footer>
 </container>
   <script>
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("/sw.js").then(function(registration) {
-      console.log("yay!");
-    }) .catch(function(error) {
-      console.log("boo", error)
-    })
+  function serviceWorker () {
+    if (!navigator.serviceWorker) return;
+
+    navigator.serviceWorker.register('/sw.js').then(function() {
+      console.log('Registration Worked!');
+    }).catch(function () {
+      console.log('Registration Failed!')
+    });
   }
   </script>
 </body>
